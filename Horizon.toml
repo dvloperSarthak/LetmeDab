@@ -6,7 +6,8 @@ description = "Emotecraft animation plugin and native mod for Horizon (Minecraft
 authors = ["LetmeDab Contributors", "Horizon Community"]
 license = "MIT OR Apache-2.0"
 side = "both"
-capabilities = ["render", "input", "command", "players", "ui"]
+capabilities = ["render", "input", "command"]
+experimental = ["render", "input"]
 
 [networking]
 channels = [
