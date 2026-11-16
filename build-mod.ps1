@@ -12,11 +12,16 @@ Write-Host "==========================================================" -Foregro
 Write-Host "       Building LetmeDab for Horizon (Minecraft Rust)     " -ForegroundColor Cyan
 Write-Host "==========================================================" -ForegroundColor Cyan
 
-# 1. Compile release binary
-Write-Host "`n[1/5] Compiling release library..." -ForegroundColor Yellow
+# 1. Compile release binary and WebAssembly mod.wasm
+Write-Host "`n[1/5] Compiling release library (native & wasm32)..." -ForegroundColor Yellow
 cargo build --release
 if ($LASTEXITCODE -ne 0) {
     Write-Error "Cargo build failed!"
+    exit 1
+}
+cargo build --release --target wasm32-unknown-unknown --lib
+if ($LASTEXITCODE -ne 0) {
+    Write-Error "Cargo wasm32 build failed!"
     exit 1
 }
 
@@ -57,12 +62,17 @@ if (Test-Path "shaders") {
     Copy-Item "shaders" -Destination "$BundleDir/shaders" -Recurse
 }
 
-# 5. Copy Compiled Binary
-Write-Host "[3/5] Copying compiled library binary..." -ForegroundColor Yellow
+# 5. Copy Compiled Binary & WebAssembly module (mod.wasm)
+Write-Host "[3/5] Copying compiled library binary and mod.wasm..." -ForegroundColor Yellow
 if (Test-Path "target/release/letmedab.dll") {
     Copy-Item "target/release/letmedab.dll" -Destination "$BundleDir/letmedab.dll"
 } elseif (Test-Path "target/release/libletmedab.so") {
     Copy-Item "target/release/libletmedab.so" -Destination "$BundleDir/libletmedab.so"
+}
+if (Test-Path "target/wasm32-unknown-unknown/release/letmedab.wasm") {
+    Copy-Item "target/wasm32-unknown-unknown/release/letmedab.wasm" -Destination "$BundleDir/mod.wasm" -Force
+    Copy-Item "target/wasm32-unknown-unknown/release/letmedab.wasm" -Destination "$BundleDir/letmedab.wasm" -Force
+    Copy-Item "target/wasm32-unknown-unknown/release/letmedab.wasm" -Destination "mod.wasm" -Force
 }
 
 # 6. Export Emotes

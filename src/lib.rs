@@ -22,3 +22,23 @@ pub use network::{EmotePacket, EMOTECRAFT_CHANNEL, PROTOCOL_VERSION};
 pub use plugin::HorizonEmotecraftPlugin;
 pub use registry::EmoteRegistry;
 pub use server::{EmotecraftServer, ServerConfig};
+
+// WebAssembly C ABI exports for Horizon WASM mod runtime (mod.wasm)
+#[no_mangle]
+pub extern "C" fn init() -> i32 {
+    0
+}
+
+#[no_mangle]
+pub extern "C" fn horizon_mod_init() -> i32 {
+    0
+}
+
+#[no_mangle]
+pub extern "C" fn tick() {
+}
+
+#[no_mangle]
+pub extern "C" fn on_key(_key: i32, _action: i32) -> i32 {
+    0
+}
