@@ -7,4 +7,3 @@ api = "0.2"
 side = "both"
 capabilities = ["render", "input", "command"]
 experimental = ["render", "input"]
-namespaces = ["letmedab", "emotecraft"]
