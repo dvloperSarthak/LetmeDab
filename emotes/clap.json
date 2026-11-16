@@ -1,0 +1,371 @@
+{
+  "name": "Clap",
+  "author": "Horizon Emotecraft",
+  "description": "Enthusiastic applause and clapping",
+  "icon": null,
+  "uuid": "00090000-0000-0000-0000-000000000009",
+  "emote": {
+    "isLoop": true,
+    "returnToTick": 6,
+    "beginTick": 0,
+    "endTick": 22,
+    "stopTick": 26,
+    "degrees": true,
+    "moves": [
+      {
+        "tick": 0,
+        "easing": "EaseOutCubic",
+        "turn": null,
+        "head": {
+          "x": null,
+          "y": null,
+          "z": null,
+          "pitch": null,
+          "yaw": null,
+          "roll": null,
+          "bend": null
+        },
+        "torso": {
+          "x": null,
+          "y": null,
+          "z": null,
+          "pitch": null,
+          "yaw": null,
+          "roll": null,
+          "bend": null
+        },
+        "rightArm": {
+          "x": null,
+          "y": null,
+          "z": null,
+          "pitch": null,
+          "yaw": null,
+          "roll": null,
+          "bend": null
+        },
+        "leftArm": {
+          "x": null,
+          "y": null,
+          "z": null,
+          "pitch": null,
+          "yaw": null,
+          "roll": null,
+          "bend": null
+        },
+        "rightLeg": {
+          "x": null,
+          "y": null,
+          "z": null,
+          "pitch": null,
+          "yaw": null,
+          "roll": null,
+          "bend": null
+        },
+        "leftLeg": {
+          "x": null,
+          "y": null,
+          "z": null,
+          "pitch": null,
+          "yaw": null,
+          "roll": null,
+          "bend": null
+        }
+      },
+      {
+        "tick": 6,
+        "easing": "EaseInOutSine",
+        "turn": null,
+        "head": {
+          "x": null,
+          "y": null,
+          "z": null,
+          "pitch": null,
+          "yaw": null,
+          "roll": null,
+          "bend": null
+        },
+        "torso": {
+          "x": null,
+          "y": null,
+          "z": null,
+          "pitch": null,
+          "yaw": null,
+          "roll": null,
+          "bend": null
+        },
+        "rightArm": {
+          "x": null,
+          "y": null,
+          "z": null,
+          "pitch": -60.000004,
+          "yaw": -30.000002,
+          "roll": 15.000001,
+          "bend": 60.000004
+        },
+        "leftArm": {
+          "x": null,
+          "y": null,
+          "z": null,
+          "pitch": -60.000004,
+          "yaw": 30.000002,
+          "roll": -15.000001,
+          "bend": 60.000004
+        },
+        "rightLeg": {
+          "x": null,
+          "y": null,
+          "z": null,
+          "pitch": null,
+          "yaw": null,
+          "roll": null,
+          "bend": null
+        },
+        "leftLeg": {
+          "x": null,
+          "y": null,
+          "z": null,
+          "pitch": null,
+          "yaw": null,
+          "roll": null,
+          "bend": null
+        }
+      },
+      {
+        "tick": 10,
+        "easing": "EaseInQuad",
+        "turn": null,
+        "head": {
+          "x": null,
+          "y": null,
+          "z": null,
+          "pitch": null,
+          "yaw": null,
+          "roll": null,
+          "bend": null
+        },
+        "torso": {
+          "x": null,
+          "y": null,
+          "z": null,
+          "pitch": null,
+          "yaw": null,
+          "roll": null,
+          "bend": null
+        },
+        "rightArm": {
+          "x": null,
+          "y": null,
+          "z": null,
+          "pitch": -65.0,
+          "yaw": -10.0,
+          "roll": null,
+          "bend": 75.0
+        },
+        "leftArm": {
+          "x": null,
+          "y": null,
+          "z": null,
+          "pitch": -65.0,
+          "yaw": 10.0,
+          "roll": null,
+          "bend": 75.0
+        },
+        "rightLeg": {
+          "x": null,
+          "y": null,
+          "z": null,
+          "pitch": null,
+          "yaw": null,
+          "roll": null,
+          "bend": null
+        },
+        "leftLeg": {
+          "x": null,
+          "y": null,
+          "z": null,
+          "pitch": null,
+          "yaw": null,
+          "roll": null,
+          "bend": null
+        }
+      },
+      {
+        "tick": 14,
+        "easing": "EaseOutQuad",
+        "turn": null,
+        "head": {
+          "x": null,
+          "y": null,
+          "z": null,
+          "pitch": null,
+          "yaw": null,
+          "roll": null,
+          "bend": null
+        },
+        "torso": {
+          "x": null,
+          "y": null,
+          "z": null,
+          "pitch": null,
+          "yaw": null,
+          "roll": null,
+          "bend": null
+        },
+        "rightArm": {
+          "x": null,
+          "y": null,
+          "z": null,
+          "pitch": -60.000004,
+          "yaw": -30.000002,
+          "roll": 15.000001,
+          "bend": 60.000004
+        },
+        "leftArm": {
+          "x": null,
+          "y": null,
+          "z": null,
+          "pitch": -60.000004,
+          "yaw": 30.000002,
+          "roll": -15.000001,
+          "bend": 60.000004
+        },
+        "rightLeg": {
+          "x": null,
+          "y": null,
+          "z": null,
+          "pitch": null,
+          "yaw": null,
+          "roll": null,
+          "bend": null
+        },
+        "leftLeg": {
+          "x": null,
+          "y": null,
+          "z": null,
+          "pitch": null,
+          "yaw": null,
+          "roll": null,
+          "bend": null
+        }
+      },
+      {
+        "tick": 18,
+        "easing": "EaseInQuad",
+        "turn": null,
+        "head": {
+          "x": null,
+          "y": null,
+          "z": null,
+          "pitch": null,
+          "yaw": null,
+          "roll": null,
+          "bend": null
+        },
+        "torso": {
+          "x": null,
+          "y": null,
+          "z": null,
+          "pitch": null,
+          "yaw": null,
+          "roll": null,
+          "bend": null
+        },
+        "rightArm": {
+          "x": null,
+          "y": null,
+          "z": null,
+          "pitch": -65.0,
+          "yaw": -10.0,
+          "roll": null,
+          "bend": 75.0
+        },
+        "leftArm": {
+          "x": null,
+          "y": null,
+          "z": null,
+          "pitch": -65.0,
+          "yaw": 10.0,
+          "roll": null,
+          "bend": 75.0
+        },
+        "rightLeg": {
+          "x": null,
+          "y": null,
+          "z": null,
+          "pitch": null,
+          "yaw": null,
+          "roll": null,
+          "bend": null
+        },
+        "leftLeg": {
+          "x": null,
+          "y": null,
+          "z": null,
+          "pitch": null,
+          "yaw": null,
+          "roll": null,
+          "bend": null
+        }
+      },
+      {
+        "tick": 22,
+        "easing": "EaseOutQuad",
+        "turn": null,
+        "head": {
+          "x": null,
+          "y": null,
+          "z": null,
+          "pitch": null,
+          "yaw": null,
+          "roll": null,
+          "bend": null
+        },
+        "torso": {
+          "x": null,
+          "y": null,
+          "z": null,
+          "pitch": null,
+          "yaw": null,
+          "roll": null,
+          "bend": null
+        },
+        "rightArm": {
+          "x": null,
+          "y": null,
+          "z": null,
+          "pitch": -60.000004,
+          "yaw": -30.000002,
+          "roll": 15.000001,
+          "bend": 60.000004
+        },
+        "leftArm": {
+          "x": null,
+          "y": null,
+          "z": null,
+          "pitch": -60.000004,
+          "yaw": 30.000002,
+          "roll": -15.000001,
+          "bend": 60.000004
+        },
+        "rightLeg": {
+          "x": null,
+          "y": null,
+          "z": null,
+          "pitch": null,
+          "yaw": null,
+          "roll": null,
+          "bend": null
+        },
+        "leftLeg": {
+          "x": null,
+          "y": null,
+          "z": null,
+          "pitch": null,
+          "yaw": null,
+          "roll": null,
+          "bend": null
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,253 @@
+{
+  "name": "Surrender",
+  "author": "Horizon Emotecraft",
+  "description": "Hands up in surrender 🙌",
+  "icon": null,
+  "uuid": "00130000-0000-0000-0000-000000000013",
+  "emote": {
+    "isLoop": false,
+    "returnToTick": 0,
+    "beginTick": 0,
+    "endTick": 40,
+    "stopTick": 42,
+    "degrees": true,
+    "moves": [
+      {
+        "tick": 0,
+        "easing": "EaseOutBack",
+        "turn": null,
+        "head": {
+          "x": null,
+          "y": null,
+          "z": null,
+          "pitch": null,
+          "yaw": null,
+          "roll": null,
+          "bend": null
+        },
+        "torso": {
+          "x": null,
+          "y": null,
+          "z": null,
+          "pitch": null,
+          "yaw": null,
+          "roll": null,
+          "bend": null
+        },
+        "rightArm": {
+          "x": null,
+          "y": null,
+          "z": null,
+          "pitch": null,
+          "yaw": null,
+          "roll": null,
+          "bend": null
+        },
+        "leftArm": {
+          "x": null,
+          "y": null,
+          "z": null,
+          "pitch": null,
+          "yaw": null,
+          "roll": null,
+          "bend": null
+        },
+        "rightLeg": {
+          "x": null,
+          "y": null,
+          "z": null,
+          "pitch": null,
+          "yaw": null,
+          "roll": null,
+          "bend": null
+        },
+        "leftLeg": {
+          "x": null,
+          "y": null,
+          "z": null,
+          "pitch": null,
+          "yaw": null,
+          "roll": null,
+          "bend": null
+        }
+      },
+      {
+        "tick": 10,
+        "easing": "EaseOutBack",
+        "turn": null,
+        "head": {
+          "x": null,
+          "y": null,
+          "z": null,
+          "pitch": 10.0,
+          "yaw": null,
+          "roll": null,
+          "bend": null
+        },
+        "torso": {
+          "x": null,
+          "y": null,
+          "z": null,
+          "pitch": null,
+          "yaw": null,
+          "roll": null,
+          "bend": null
+        },
+        "rightArm": {
+          "x": null,
+          "y": null,
+          "z": null,
+          "pitch": -165.0,
+          "yaw": null,
+          "roll": 20.0,
+          "bend": 15.000001
+        },
+        "leftArm": {
+          "x": null,
+          "y": null,
+          "z": null,
+          "pitch": -165.0,
+          "yaw": null,
+          "roll": -20.0,
+          "bend": 15.000001
+        },
+        "rightLeg": {
+          "x": null,
+          "y": null,
+          "z": null,
+          "pitch": null,
+          "yaw": null,
+          "roll": null,
+          "bend": null
+        },
+        "leftLeg": {
+          "x": null,
+          "y": null,
+          "z": null,
+          "pitch": null,
+          "yaw": null,
+          "roll": null,
+          "bend": null
+        }
+      },
+      {
+        "tick": 30,
+        "easing": "EaseInOutSine",
+        "turn": null,
+        "head": {
+          "x": null,
+          "y": null,
+          "z": null,
+          "pitch": 10.0,
+          "yaw": null,
+          "roll": null,
+          "bend": null
+        },
+        "torso": {
+          "x": null,
+          "y": null,
+          "z": null,
+          "pitch": null,
+          "yaw": null,
+          "roll": null,
+          "bend": null
+        },
+        "rightArm": {
+          "x": null,
+          "y": null,
+          "z": null,
+          "pitch": -165.0,
+          "yaw": null,
+          "roll": 20.0,
+          "bend": 15.000001
+        },
+        "leftArm": {
+          "x": null,
+          "y": null,
+          "z": null,
+          "pitch": -165.0,
+          "yaw": null,
+          "roll": -20.0,
+          "bend": 15.000001
+        },
+        "rightLeg": {
+          "x": null,
+          "y": null,
+          "z": null,
+          "pitch": null,
+          "yaw": null,
+          "roll": null,
+          "bend": null
+        },
+        "leftLeg": {
+          "x": null,
+          "y": null,
+          "z": null,
+          "pitch": null,
+          "yaw": null,
+          "roll": null,
+          "bend": null
+        }
+      },
+      {
+        "tick": 40,
+        "easing": "EaseOutSine",
+        "turn": null,
+        "head": {
+          "x": null,
+          "y": null,
+          "z": null,
+          "pitch": null,
+          "yaw": null,
+          "roll": null,
+          "bend": null
+        },
+        "torso": {
+          "x": null,
+          "y": null,
+          "z": null,
+          "pitch": null,
+          "yaw": null,
+          "roll": null,
+          "bend": null
+        },
+        "rightArm": {
+          "x": null,
+          "y": null,
+          "z": null,
+          "pitch": null,
+          "yaw": null,
+          "roll": null,
+          "bend": null
+        },
+        "leftArm": {
+          "x": null,
+          "y": null,
+          "z": null,
+          "pitch": null,
+          "yaw": null,
+          "roll": null,
+          "bend": null
+        },
+        "rightLeg": {
+          "x": null,
+          "y": null,
+          "z": null,
+          "pitch": null,
+          "yaw": null,
+          "roll": null,
+          "bend": null
+        },
+        "leftLeg": {
+          "x": null,
+          "y": null,
+          "z": null,
+          "pitch": null,
+          "yaw": null,
+          "roll": null,
+          "bend": null
+        }
+      }
+    ]
+  }
+}

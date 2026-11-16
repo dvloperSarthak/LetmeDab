@@ -1,0 +1,28 @@
+[package]
+name = "letmedab"
+version = "0.1.0"
+edition = "2021"
+authors = ["LetmeDab Contributors", "Horizon Community"]
+description = "LetmeDab: Emotecraft animation plugin and mod for Horizon (Minecraft Rust Edition)"
+license = "MIT OR Apache-2.0"
+keywords = ["minecraft", "horizon", "emotecraft", "animation", "plugin"]
+
+[lib]
+name = "letmedab"
+path = "src/lib.rs"
+crate-type = ["rlib", "cdylib"]
+
+[[bin]]
+name = "letmedab"
+path = "src/main.rs"
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+uuid = { version = "1.10", features = ["serde", "v4"] }
+byteorder = "1.5"
+thiserror = "1.0"
+log = "0.4"
+env_logger = "0.11"
+clap = { version = "4.5", features = ["derive"] }
+flate2 = "1.0"

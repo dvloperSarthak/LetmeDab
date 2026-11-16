@@ -1,0 +1,312 @@
+{
+  "name": "Gangnam",
+  "author": "Horizon Emotecraft",
+  "description": "Oppa Gangnam Style horse dance 🐎",
+  "icon": null,
+  "uuid": "001a0000-0000-0000-0000-00000000001a",
+  "emote": {
+    "isLoop": true,
+    "returnToTick": 5,
+    "beginTick": 0,
+    "endTick": 20,
+    "stopTick": 24,
+    "degrees": true,
+    "moves": [
+      {
+        "tick": 0,
+        "easing": "EaseInOutSine",
+        "turn": null,
+        "head": {
+          "x": null,
+          "y": null,
+          "z": null,
+          "pitch": null,
+          "yaw": null,
+          "roll": null,
+          "bend": null
+        },
+        "torso": {
+          "x": null,
+          "y": null,
+          "z": null,
+          "pitch": null,
+          "yaw": null,
+          "roll": null,
+          "bend": null
+        },
+        "rightArm": {
+          "x": null,
+          "y": null,
+          "z": null,
+          "pitch": null,
+          "yaw": null,
+          "roll": null,
+          "bend": null
+        },
+        "leftArm": {
+          "x": null,
+          "y": null,
+          "z": null,
+          "pitch": null,
+          "yaw": null,
+          "roll": null,
+          "bend": null
+        },
+        "rightLeg": {
+          "x": null,
+          "y": null,
+          "z": null,
+          "pitch": null,
+          "yaw": null,
+          "roll": null,
+          "bend": null
+        },
+        "leftLeg": {
+          "x": null,
+          "y": null,
+          "z": null,
+          "pitch": null,
+          "yaw": null,
+          "roll": null,
+          "bend": null
+        }
+      },
+      {
+        "tick": 5,
+        "easing": "EaseInOutSine",
+        "turn": null,
+        "head": {
+          "x": null,
+          "y": null,
+          "z": null,
+          "pitch": null,
+          "yaw": null,
+          "roll": null,
+          "bend": null
+        },
+        "torso": {
+          "x": null,
+          "y": -1.5,
+          "z": null,
+          "pitch": 5.0,
+          "yaw": null,
+          "roll": null,
+          "bend": null
+        },
+        "rightArm": {
+          "x": null,
+          "y": null,
+          "z": null,
+          "pitch": -65.0,
+          "yaw": -30.000002,
+          "roll": -10.0,
+          "bend": 80.0
+        },
+        "leftArm": {
+          "x": null,
+          "y": null,
+          "z": null,
+          "pitch": -65.0,
+          "yaw": 30.000002,
+          "roll": 10.0,
+          "bend": 80.0
+        },
+        "rightLeg": {
+          "x": null,
+          "y": null,
+          "z": null,
+          "pitch": 10.0,
+          "yaw": null,
+          "roll": null,
+          "bend": 20.0
+        },
+        "leftLeg": {
+          "x": null,
+          "y": null,
+          "z": null,
+          "pitch": -10.0,
+          "yaw": null,
+          "roll": null,
+          "bend": 20.0
+        }
+      },
+      {
+        "tick": 10,
+        "easing": "EaseInOutSine",
+        "turn": null,
+        "head": {
+          "x": null,
+          "y": null,
+          "z": null,
+          "pitch": null,
+          "yaw": null,
+          "roll": null,
+          "bend": null
+        },
+        "torso": {
+          "x": null,
+          "y": 1.5,
+          "z": null,
+          "pitch": 5.0,
+          "yaw": null,
+          "roll": null,
+          "bend": null
+        },
+        "rightArm": {
+          "x": null,
+          "y": null,
+          "z": null,
+          "pitch": -65.0,
+          "yaw": -30.000002,
+          "roll": -10.0,
+          "bend": 80.0
+        },
+        "leftArm": {
+          "x": null,
+          "y": null,
+          "z": null,
+          "pitch": -65.0,
+          "yaw": 30.000002,
+          "roll": 10.0,
+          "bend": 80.0
+        },
+        "rightLeg": {
+          "x": null,
+          "y": null,
+          "z": null,
+          "pitch": -10.0,
+          "yaw": null,
+          "roll": null,
+          "bend": 20.0
+        },
+        "leftLeg": {
+          "x": null,
+          "y": null,
+          "z": null,
+          "pitch": 10.0,
+          "yaw": null,
+          "roll": null,
+          "bend": 20.0
+        }
+      },
+      {
+        "tick": 15,
+        "easing": "EaseInOutSine",
+        "turn": null,
+        "head": {
+          "x": null,
+          "y": null,
+          "z": null,
+          "pitch": null,
+          "yaw": null,
+          "roll": null,
+          "bend": null
+        },
+        "torso": {
+          "x": null,
+          "y": -1.5,
+          "z": null,
+          "pitch": 5.0,
+          "yaw": null,
+          "roll": null,
+          "bend": null
+        },
+        "rightArm": {
+          "x": null,
+          "y": null,
+          "z": null,
+          "pitch": -65.0,
+          "yaw": -30.000002,
+          "roll": -10.0,
+          "bend": 80.0
+        },
+        "leftArm": {
+          "x": null,
+          "y": null,
+          "z": null,
+          "pitch": -65.0,
+          "yaw": 30.000002,
+          "roll": 10.0,
+          "bend": 80.0
+        },
+        "rightLeg": {
+          "x": null,
+          "y": null,
+          "z": null,
+          "pitch": 10.0,
+          "yaw": null,
+          "roll": null,
+          "bend": 20.0
+        },
+        "leftLeg": {
+          "x": null,
+          "y": null,
+          "z": null,
+          "pitch": -10.0,
+          "yaw": null,
+          "roll": null,
+          "bend": 20.0
+        }
+      },
+      {
+        "tick": 20,
+        "easing": "EaseInOutSine",
+        "turn": null,
+        "head": {
+          "x": null,
+          "y": null,
+          "z": null,
+          "pitch": null,
+          "yaw": null,
+          "roll": null,
+          "bend": null
+        },
+        "torso": {
+          "x": null,
+          "y": 1.5,
+          "z": null,
+          "pitch": 5.0,
+          "yaw": null,
+          "roll": null,
+          "bend": null
+        },
+        "rightArm": {
+          "x": null,
+          "y": null,
+          "z": null,
+          "pitch": -65.0,
+          "yaw": -30.000002,
+          "roll": -10.0,
+          "bend": 80.0
+        },
+        "leftArm": {
+          "x": null,
+          "y": null,
+          "z": null,
+          "pitch": -65.0,
+          "yaw": 30.000002,
+          "roll": 10.0,
+          "bend": 80.0
+        },
+        "rightLeg": {
+          "x": null,
+          "y": null,
+          "z": null,
+          "pitch": -10.0,
+          "yaw": null,
+          "roll": null,
+          "bend": 20.0
+        },
+        "leftLeg": {
+          "x": null,
+          "y": null,
+          "z": null,
+          "pitch": 10.0,
+          "yaw": null,
+          "roll": null,
+          "bend": 20.0
+        }
+      }
+    ]
+  }
+}

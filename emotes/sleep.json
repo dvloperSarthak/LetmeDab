@@ -1,0 +1,194 @@
+{
+  "name": "Sleep",
+  "author": "Horizon Emotecraft",
+  "description": "Lie down and sleep 💤",
+  "icon": null,
+  "uuid": "00150000-0000-0000-0000-000000000015",
+  "emote": {
+    "isLoop": true,
+    "returnToTick": 15,
+    "beginTick": 0,
+    "endTick": 45,
+    "stopTick": 50,
+    "degrees": true,
+    "moves": [
+      {
+        "tick": 0,
+        "easing": "EaseInOutSine",
+        "turn": null,
+        "head": {
+          "x": null,
+          "y": null,
+          "z": null,
+          "pitch": null,
+          "yaw": null,
+          "roll": null,
+          "bend": null
+        },
+        "torso": {
+          "x": null,
+          "y": null,
+          "z": null,
+          "pitch": null,
+          "yaw": null,
+          "roll": null,
+          "bend": null
+        },
+        "rightArm": {
+          "x": null,
+          "y": null,
+          "z": null,
+          "pitch": null,
+          "yaw": null,
+          "roll": null,
+          "bend": null
+        },
+        "leftArm": {
+          "x": null,
+          "y": null,
+          "z": null,
+          "pitch": null,
+          "yaw": null,
+          "roll": null,
+          "bend": null
+        },
+        "rightLeg": {
+          "x": null,
+          "y": null,
+          "z": null,
+          "pitch": null,
+          "yaw": null,
+          "roll": null,
+          "bend": null
+        },
+        "leftLeg": {
+          "x": null,
+          "y": null,
+          "z": null,
+          "pitch": null,
+          "yaw": null,
+          "roll": null,
+          "bend": null
+        }
+      },
+      {
+        "tick": 15,
+        "easing": "EaseInOutSine",
+        "turn": null,
+        "head": {
+          "x": null,
+          "y": 11.0,
+          "z": null,
+          "pitch": 90.0,
+          "yaw": null,
+          "roll": 30.000002,
+          "bend": null
+        },
+        "torso": {
+          "x": null,
+          "y": 11.0,
+          "z": null,
+          "pitch": 90.0,
+          "yaw": null,
+          "roll": null,
+          "bend": null
+        },
+        "rightArm": {
+          "x": null,
+          "y": 11.0,
+          "z": null,
+          "pitch": 90.0,
+          "yaw": null,
+          "roll": null,
+          "bend": null
+        },
+        "leftArm": {
+          "x": null,
+          "y": 11.0,
+          "z": null,
+          "pitch": 90.0,
+          "yaw": null,
+          "roll": null,
+          "bend": null
+        },
+        "rightLeg": {
+          "x": null,
+          "y": 11.0,
+          "z": null,
+          "pitch": 90.0,
+          "yaw": null,
+          "roll": null,
+          "bend": null
+        },
+        "leftLeg": {
+          "x": null,
+          "y": 11.0,
+          "z": null,
+          "pitch": 90.0,
+          "yaw": null,
+          "roll": null,
+          "bend": null
+        }
+      },
+      {
+        "tick": 45,
+        "easing": "Linear",
+        "turn": null,
+        "head": {
+          "x": null,
+          "y": 11.0,
+          "z": null,
+          "pitch": 90.0,
+          "yaw": null,
+          "roll": 30.000002,
+          "bend": null
+        },
+        "torso": {
+          "x": null,
+          "y": 11.0,
+          "z": null,
+          "pitch": 90.0,
+          "yaw": null,
+          "roll": null,
+          "bend": null
+        },
+        "rightArm": {
+          "x": null,
+          "y": 11.0,
+          "z": null,
+          "pitch": 90.0,
+          "yaw": null,
+          "roll": null,
+          "bend": null
+        },
+        "leftArm": {
+          "x": null,
+          "y": 11.0,
+          "z": null,
+          "pitch": 90.0,
+          "yaw": null,
+          "roll": null,
+          "bend": null
+        },
+        "rightLeg": {
+          "x": null,
+          "y": 11.0,
+          "z": null,
+          "pitch": 90.0,
+          "yaw": null,
+          "roll": null,
+          "bend": null
+        },
+        "leftLeg": {
+          "x": null,
+          "y": 11.0,
+          "z": null,
+          "pitch": 90.0,
+          "yaw": null,
+          "roll": null,
+          "bend": null
+        }
+      }
+    ]
+  }
+}
