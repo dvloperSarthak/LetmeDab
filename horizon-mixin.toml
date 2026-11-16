@@ -1,19 +1,33 @@
 [mod]
 id = "letmedab"
-name = "LetmeDab"
 version = "0.1.0"
-authors = ["LetmeDab Contributors", "Horizon Community"]
-description = "Emotecraft native animation system and skeletal model hooks for Horizon"
 priority = 100
 
-[mixins]
-# Client-side player model rendering & input hooks
-client = [
-    { target = "horizon_client::renderer::player", hook = "RENDER_MODEL", handler = "letmedab::plugin::HorizonEmotecraftPlugin::apply_model_pose" },
-    { target = "horizon_client::input", hook = "KEY_INPUT", handler = "letmedab::plugin::HorizonEmotecraftPlugin::on_key_down" }
+[compatibility]
+horizon_revision = "0.2"
+
+[[module]]
+id = "runtime"
+file = "crates/horizon-client/src/game.rs"
+name = "letmedab"
+source = "runtime.rs"
+
+[[injection]]
+id = "tick"
+kind = "HEAD"
+target = "horizon_client::game::native_hooks::Game<'_>::native_tick"
+helper = "tick.rs"
+bindings = [
+  { name = "game", ty = "&mut crate::game::Game<'_>", value = "&mut *self" },
 ]
 
-# Server-side custom payload network handler
-server = [
-    { target = "horizon_server::network::custom_payload", hook = "PACKET_RECEIVED", handler = "letmedab::server::EmotecraftServer::handle_packet" }
+[[injection]]
+id = "command"
+kind = "HEAD"
+target = "horizon_client::game::native_hooks::Game<'_>::native_command"
+helper = "command.rs"
+bindings = [
+  { name = "game", ty = "&mut crate::game::Game<'_>", value = "&mut *self" },
+  { name = "command", ty = "&str", value = "command" },
+  { name = "ran", ty = "&mut bool", value = "&mut *ran" },
 ]

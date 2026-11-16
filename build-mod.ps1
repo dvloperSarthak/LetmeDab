@@ -45,6 +45,9 @@ if (Test-Path "config.toml") {
 }
 Copy-Item "Cargo.toml" -Destination "$BundleDir/Cargo.toml"
 Copy-Item "README.md" -Destination "$BundleDir/README.md"
+if (Test-Path "runtime.rs") { Copy-Item "runtime.rs" -Destination "$BundleDir/runtime.rs" }
+if (Test-Path "tick.rs") { Copy-Item "tick.rs" -Destination "$BundleDir/tick.rs" }
+if (Test-Path "command.rs") { Copy-Item "command.rs" -Destination "$BundleDir/command.rs" }
 Copy-Item "src/*" -Destination "$BundleDir/src" -Recurse
 
 # 4. Copy Shaders
