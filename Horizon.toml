@@ -2,10 +2,11 @@
 id = "letmedab"
 name = "LetmeDab"
 version = "0.1.0"
-description = "LetmeDab: Emotecraft animation plugin and mod for Horizon (Minecraft Rust Edition)"
+description = "Emotecraft animation plugin and native mod for Horizon (Minecraft Rust Edition)"
 authors = ["LetmeDab Contributors", "Horizon Community"]
 license = "MIT OR Apache-2.0"
-side = "both" # Supports client-side rendering and server-side relay/validation
+side = "both"
+capabilities = ["render", "input", "command", "players", "ui"]
 
 [networking]
 channels = [
