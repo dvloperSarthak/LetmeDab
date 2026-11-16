@@ -86,6 +86,13 @@ if (Test-Path $HmodZip) { Remove-Item $HmodZip -Force }
 if (Test-Path $HmodFile) { Remove-Item $HmodFile -Force }
 Copy-Item $HnmodFile $HmodFile -Force
 
+# Create unversioned aliases (letmedab.hnmod and letmedab.hmod)
+Copy-Item $HnmodFile "$DistDir/letmedab.hnmod" -Force
+Copy-Item $HmodFile "$DistDir/letmedab.hmod" -Force
+
+# Clean any legacy folders
+if (Test-Path "$DistDir/emotecraft") { Remove-Item "$DistDir/emotecraft" -Recurse -Force }
+
 Write-Host "`n==========================================================" -ForegroundColor Green
 Write-Host " SUCCESS! Mod bundles built successfully: " -ForegroundColor Green
 Write-Host " - Native Mod:  $HnmodFile (.hnmod) [Recommended for Horizon Native Code]" -ForegroundColor Green
