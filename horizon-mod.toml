@@ -6,4 +6,5 @@ authors = ["LetmeDab Contributors", "Horizon Community"]
 api = "0.2"
 side = "both"
 capabilities = ["render", "input", "command", "ui"]
+experimental = ["render"]
 namespaces = ["letmedab", "emotecraft"]
