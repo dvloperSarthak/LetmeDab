@@ -1,0 +1,19 @@
+[mod]
+id = "letmedab"
+name = "LetmeDab"
+version = "0.1.0"
+authors = ["LetmeDab Contributors", "Horizon Community"]
+description = "Emotecraft native animation system and skeletal model hooks for Horizon"
+priority = 100
+
+[mixins]
+# Client-side player model rendering & input hooks
+client = [
+    { target = "horizon_client::renderer::player", hook = "RENDER_MODEL", handler = "letmedab::plugin::HorizonEmotecraftPlugin::apply_model_pose" },
+    { target = "horizon_client::input", hook = "KEY_INPUT", handler = "letmedab::plugin::HorizonEmotecraftPlugin::on_key_down" }
+]
+
+# Server-side custom payload network handler
+server = [
+    { target = "horizon_server::network::custom_payload", hook = "PACKET_RECEIVED", handler = "letmedab::server::EmotecraftServer::handle_packet" }
+]

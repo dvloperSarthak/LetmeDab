@@ -58,6 +58,19 @@
 
 ---
 
+## 📦 .hnmod vs .hmod: Which is Suitable?
+
+Horizon supports two mod bundle formats:
+
+| Format | Type | Description | Suitable for LetmeDab? |
+|---|---|---|---|
+| **`.hnmod`** | **Horizon Native Mod** | A native Rust mod bundle containing source code, mixins (`horizon-mixin.toml`), and compiled binaries that hook directly into Horizon's game engine, renderer, and packet pipeline before compilation. | **✅ Yes (Recommended)** — Emotecraft requires raw skeletal bone manipulation, input hooks, and custom network packet codecs at native engine speed. |
+| **`.hmod`** | **Horizon Content Mod** | A sandboxed content/asset pack (`horizon-mod.toml`) containing data, textures, and JSON animations. | **✅ Compatible** — Supported for setups that only load emote definitions and WGSL shaders without native mixins. |
+
+Our build system automatically produces **both** `dist/letmedab-0.1.0.hnmod` and `dist/letmedab-0.1.0.hmod`!
+
+---
+
 ## 🛠️ How to Build the Mod for Horizon
 
 You can build the mod using either the Rust CLI or the PowerShell packaging script:

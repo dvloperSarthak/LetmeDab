@@ -286,12 +286,26 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
             let dist_bundle_dir = output_dir.join("letmedab");
             fs::create_dir_all(&dist_bundle_dir)?;
 
-            println!("2. Copying horizon-mod.toml manifest...");
+            println!("2. Copying manifests (horizon-mod.toml & horizon-mixin.toml)...");
             if Path::new("horizon-mod.toml").exists() {
                 fs::copy("horizon-mod.toml", dist_bundle_dir.join("horizon-mod.toml"))?;
             }
+            if Path::new("horizon-mixin.toml").exists() {
+                fs::copy("horizon-mixin.toml", dist_bundle_dir.join("horizon-mixin.toml"))?;
+            }
             if Path::new("Horizon.toml").exists() {
                 fs::copy("Horizon.toml", dist_bundle_dir.join("Horizon.toml"))?;
+            }
+            if Path::new("Cargo.toml").exists() {
+                fs::copy("Cargo.toml", dist_bundle_dir.join("Cargo.toml"))?;
+            }
+            let src_dir = Path::new("src");
+            if src_dir.exists() {
+                let target_src = dist_bundle_dir.join("src");
+                fs::create_dir_all(&target_src)?;
+                for entry in fs::read_dir(src_dir)?.flatten() {
+                    fs::copy(entry.path(), target_src.join(entry.file_name()))?;
+                }
             }
 
             println!("3. Exporting 32 built-in emotes into bundle...");
@@ -335,10 +349,10 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
                 println!("   (Note: Library target built in target/release)");
             }
 
-            println!("\n5. Packaging finished!");
-            println!("   Folder: {}", dist_bundle_dir.display());
-            println!("   -> You can place this 'letmedab' directory directly into your Horizon 'mods/' folder!");
-            println!("   -> Or package into 'letmedab.hmod' / 'letmedab.hnmod'.");
+            println!("\n6. Packaging finished!");
+            println!("   Directory: {}", dist_bundle_dir.display());
+            println!("   -> Suitable format: .hnmod (Horizon Native Mod) for native Rust code & skeletal mixins!");
+            println!("   -> Compatible with both .hnmod and .hmod loaders.");
         }
     }
 
