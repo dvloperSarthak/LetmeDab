@@ -40,6 +40,9 @@ if (Test-Path "horizon-mixin.toml") {
 if (Test-Path "Horizon.toml") {
     Copy-Item "Horizon.toml" -Destination "$BundleDir/Horizon.toml"
 }
+if (Test-Path "config.toml") {
+    Copy-Item "config.toml" -Destination "$BundleDir/config.toml"
+}
 Copy-Item "Cargo.toml" -Destination "$BundleDir/Cargo.toml"
 Copy-Item "README.md" -Destination "$BundleDir/README.md"
 Copy-Item "src/*" -Destination "$BundleDir/src" -Recurse

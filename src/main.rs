@@ -296,6 +296,9 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
             if Path::new("Horizon.toml").exists() {
                 fs::copy("Horizon.toml", dist_bundle_dir.join("Horizon.toml"))?;
             }
+            if Path::new("config.toml").exists() {
+                fs::copy("config.toml", dist_bundle_dir.join("config.toml"))?;
+            }
             if Path::new("Cargo.toml").exists() {
                 fs::copy("Cargo.toml", dist_bundle_dir.join("Cargo.toml"))?;
             }

@@ -3,30 +3,7 @@ name = "LetmeDab"
 version = "0.1.0"
 description = "Emotecraft animation plugin and native mod for Horizon (Minecraft Rust Edition)"
 authors = ["LetmeDab Contributors", "Horizon Community"]
-license = "MIT OR Apache-2.0"
 api = "0.2"
-side = "both" # Options: client, server, or both
-entry = "letmedab"
+side = "both"
 capabilities = ["render", "input", "command", "players", "ui"]
-
-[networking]
-channels = [
-    "emotecraft:main",
-    "emotecraft:play",
-    "emotecraft:stop"
-]
-protocol_version = 8
-
-[keybinds]
-open_wheel = { key = "B", name = "Open Emote Wheel", category = "LetmeDab" }
-stop_emote = { key = "X", name = "Stop Emote", category = "LetmeDab" }
-quick_dab = { key = "G", name = "Quick Dab", category = "LetmeDab" }
-quick_wave = { key = "H", name = "Quick Wave", category = "LetmeDab" }
-
-[config]
-stop_on_move = true
-stop_on_attack = true
-stop_on_damage = true
-allow_custom_emotes = true
-max_packet_rate_per_sec = 5
-broadcast_radius_blocks = 64.0
+namespaces = ["letmedab", "emotecraft"]
