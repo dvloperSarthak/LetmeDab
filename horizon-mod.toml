@@ -5,5 +5,5 @@ description = "Emotecraft animation plugin and native mod for Horizon (Minecraft
 authors = ["LetmeDab Contributors", "Horizon Community"]
 api = "0.2"
 side = "both"
-capabilities = ["render", "input", "command", "players", "ui"]
+capabilities = ["render", "input", "command", "ui"]
 namespaces = ["letmedab", "emotecraft"]
