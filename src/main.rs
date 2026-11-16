@@ -286,8 +286,13 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
             let dist_bundle_dir = output_dir.join("letmedab");
             fs::create_dir_all(&dist_bundle_dir)?;
 
-            println!("2. Copying Horizon.toml manifest...");
-            fs::copy("Horizon.toml", dist_bundle_dir.join("Horizon.toml"))?;
+            println!("2. Copying horizon-mod.toml manifest...");
+            if Path::new("horizon-mod.toml").exists() {
+                fs::copy("horizon-mod.toml", dist_bundle_dir.join("horizon-mod.toml"))?;
+            }
+            if Path::new("Horizon.toml").exists() {
+                fs::copy("Horizon.toml", dist_bundle_dir.join("Horizon.toml"))?;
+            }
 
             println!("3. Exporting 32 built-in emotes into bundle...");
             let emotes_target = dist_bundle_dir.join("emotes");

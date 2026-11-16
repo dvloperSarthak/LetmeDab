@@ -14,7 +14,7 @@
   - Supports looping emotes (`isLoop`, `returnToTick`, `beginTick`, `endTick`, `stopTick`).
 
 - **⌨️ Horizon Keybinds & Radial Emote Wheel**:
-  - Default keybindings registered in [`Horizon.toml`](file:///c:/Users/Sarvadnya/LetmeDAB/Horizon.toml):
+  - Default keybindings registered in [`horizon-mod.toml`](file:///c:/Users/Sarvadnya/LetmeDAB/horizon-mod.toml):
     - **`B`**: Open / Toggle Radial Emote Wheel (8 customizable quick slots)
     - **`X`**: Stop active emote (with smooth fade-out)
     - **`G`**: Quick Dab!
@@ -108,7 +108,8 @@ Creates `dist/letmedab-0.1.0.hmod` (a compressed Horizon mod archive ready to dr
 ```
 LetmeDAB/
 ├── Cargo.toml            # Package configuration (lib + cdylib + bin)
-├── Horizon.toml          # Horizon Mod & Keybind manifest
+├── horizon-mod.toml      # Official Horizon Mod manifest & keybinds
+├── Horizon.toml          # Legacy manifest alias
 ├── build-mod.ps1         # One-click mod building script (.hmod)
 ├── dist/                 # Packaged mod output (.hmod & directory)
 ├── src/
