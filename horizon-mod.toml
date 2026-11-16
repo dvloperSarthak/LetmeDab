@@ -7,7 +7,8 @@ license = "MIT OR Apache-2.0"
 api = "0.2"
 side = "both" # Options: client, server, or both
 entry = "letmedab"
-capabilities = ["networking", "input", "renderer"]
+capabilities = ["networking", "input", "renderer", "shaders"]
+shaders = "shaders/horizon-shaders.toml"
 
 [networking]
 channels = [

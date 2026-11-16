@@ -27,6 +27,11 @@
   - **Posture & Roleplay**: `sit`, `sleep`, `zombie`, `ninja`, `flex`
   - **Dances & Fitness**: `floss`, `gangnam`, `spin`, `guitar`, `disco`, `robot`, `pushup`, `jumping_jack`
 
+- **🎨 Horizon Shader API Integration (WGSL)**:
+  - Compatible with [Horizon Shader API](https://playhorizon.dev/docs/api/shaders).
+  - Uses native **WebGPU Shading Language (WGSL)** compiled via `wgpu` across Vulkan, Metal, and DirectX 12.
+  - Bundled [`shaders/horizon-shaders.toml`](file:///c:/Users/Sarvadnya/LetmeDAB/shaders/horizon-shaders.toml) and [`shaders/emote_fx.wgsl`](file:///c:/Users/Sarvadnya/LetmeDAB/shaders/emote_fx.wgsl) adding dynamic party lighting and cinematic emote vignette post-processing passes.
+
 - **🌐 Multiplayer & Network Synchronization**:
   - Uses Minecraft Custom Payload packets over the standard `emotecraft:main` plugin channel (Protocol v8).
   - Full packet handling: Handshake (`0x00`), Play (`0x01`), Stop (`0x02`), SyncList (`0x03`).

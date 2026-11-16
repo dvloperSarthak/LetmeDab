@@ -302,7 +302,17 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
                 emote.to_emote_file().save_to_file(&file_path)?;
             }
 
-            println!("4. Locating compiled library binary...");
+            let shaders_src = Path::new("shaders");
+            if shaders_src.exists() {
+                println!("4. Copying WGSL shaders into bundle...");
+                let shaders_target = dist_bundle_dir.join("shaders");
+                fs::create_dir_all(&shaders_target)?;
+                for entry in fs::read_dir(shaders_src)?.flatten() {
+                    fs::copy(entry.path(), shaders_target.join(entry.file_name()))?;
+                }
+            }
+
+            println!("5. Locating compiled library binary...");
             let lib_candidates = [
                 Path::new("target/release/letmedab.dll"),
                 Path::new("target/release/libletmedab.so"),

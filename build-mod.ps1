@@ -29,7 +29,7 @@ if (Test-Path $BundleDir) {
 New-Item -ItemType Directory -Path "$BundleDir/emotes" -Force | Out-Null
 
 # 3. Copy Manifest & Assets
-Write-Host "[2/4] Copying horizon-mod.toml and assets..." -ForegroundColor Yellow
+Write-Host "[2/4] Copying horizon-mod.toml, assets, and shaders..." -ForegroundColor Yellow
 if (Test-Path "horizon-mod.toml") {
     Copy-Item "horizon-mod.toml" -Destination "$BundleDir/horizon-mod.toml"
 }
@@ -37,6 +37,9 @@ if (Test-Path "Horizon.toml") {
     Copy-Item "Horizon.toml" -Destination "$BundleDir/Horizon.toml"
 }
 Copy-Item "README.md" -Destination "$BundleDir/README.md"
+if (Test-Path "shaders") {
+    Copy-Item "shaders" -Destination "$BundleDir/shaders" -Recurse
+}
 
 # 4. Copy Compiled Binary
 Write-Host "[3/4] Copying compiled binary..." -ForegroundColor Yellow

@@ -1,0 +1,14 @@
+id = "letmedab_fx"
+name = "LetmeDab Emote FX"
+version = "0.1.0"
+authors = ["LetmeDab Contributors"]
+api = "0.2"
+description = "Dynamic lighting, disco ambience, and emote aura post-processing shaders for LetmeDab"
+
+[stages]
+post = "emote_fx.wgsl"
+
+[options]
+enable_party_lights = { default = true, label = "Party Disco Lighting on Emotes" }
+enable_vignette = { default = true, label = "Cinematic Emote Vignette" }
+intensity = { default = 0.75, min = 0.0, max = 1.0, label = "Effect Intensity" }
